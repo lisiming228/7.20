@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .window{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="window"></div>
+    <div class="window2"></div>
+    <script src="animate.js"></script>
+    <script src="copy.js"></script>
+    <script src="wheel.js"></script>
+    <script>
+        wheel(".window",{
+            imgs:["images/banner.jpg","images/banner2.jpg","images/banner3.jpg","images/banner4.jpg"],
+            imgColor:["#E8E8E8","#212934","#479ee8","#FB994E"],
+            links:["images/banner.jpg","images/banner2.jpg","images/banner3.jpg","images/banner4.jpg"],
+            imgSize:[1130,500],
+            btnColor:"#ccc",
+            btnActive:"#000"
+        },{
+            time:3,
+            eachTime:2
+        })
+        // new wheel(".window2",{
+        //     imgs:["images/banner.jpg","images/banner2.jpg","images/banner3.jpg","images/banner4.jpg"],
+        //     imgColor:["#E8E8E8","#212934","#479ee8","#FB994E"],
+        //     links:["images/banner.jpg","images/banner2.jpg","images/banner3.jpg","images/banner4.jpg"],
+        //     imgSize:[1130,500],
+        //     btnColor:"#ccc",
+        //     btnActive:"#000"
+        // },{
+        //     time:3,
+        //     eachTime:2
+        // })
+    </script>
+</body>
+</html>
